@@ -1,5 +1,5 @@
 # Memoirs Jekyll Theme
 
-[Live Demo](https://wowthemesnet.github.io/jekyll-theme-memoirs/) | [Docs & Download](https://bootstrapstarter.com/bootstrap-templates/jekyll-theme-memoirs/) |  [Buy me a coffee](https://www.wowthemes.net/donate/)
+[Lazada Store](https://lazada.vn/shop/audibox) | [Shopee Store](https://shopee.vn/comica.vietnam) |  [AUDIBOX Website](https://www.audibox.co)
 
-![memoirs](https://bootstrapstarter.com/assets/img/themes/memoirs-jekyll.jpg)
+![lazada](../assets/images/lazada-audibox.png)
