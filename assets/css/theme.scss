@@ -45,6 +45,7 @@ h1,h2,h3,h4,h5,h6 {
     @include media-breakpoint-up(sm) {
         font-size:30px;
         line-height:1.2;
+        padding-top: 36px;
     }
 }
 .bigradius {
@@ -114,9 +115,9 @@ img, img:hover {
 }
 // menu
 .navbar-brand img {
-    max-height:80px;
-    margin-bottom:40px;
-    margin-top:40px;
+    max-height:60px;
+    // margin-bottom:40px;
+    // margin-top:40px;
 }
 .sidebar {
     position: fixed;
@@ -401,7 +402,7 @@ img, img:hover {
     margin-right: auto;
 }
 .posttitle {
-    font-size:50px;
+    font-size:30px;
     font-weight:700;
     line-height:1.2;
 }
