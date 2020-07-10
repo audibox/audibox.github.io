@@ -51,10 +51,12 @@ ga('send', 'pageview');
 <nav id="menu">
     <ul>
         <h3>Navigation</h3>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/about">About <span class="badge badge-primary">Memoirs Jekyll Theme</span></a></li>
-        <li><a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/jekyll-theme-memoirs/">Get Memoirs</a></li>      
-        <li><a href="{{ site.baseurl }}/contact">Contact</a></li>       
+        <li><a href="{{ site.baseurl }}/"><span class="badge badge-dark">Home</span></a></li>
+        <li><a href="{{ site.lazada }}" target="_blank"><span class="badge badge-success">Lazada</span></a></li>
+        <li><a href="{{ site.shopee }}" target="_blank"><span class="badge badge-warning">Shopee</span></a></li>
+        <li><a href="{{ site.facebook }}" target="_blank"><span class="badge badge-primary">Facebook</span></a></li>
+        <li><a href="{{ site.instagram }}" target="_blank"><span class="badge badge-danger">Instagram</span></a></li>
+        <li><span class="badge badge-info">Phone: 0923633022</span></a></li>      
     </ul>   
 </nav>
 
@@ -94,11 +96,11 @@ ga('send', 'pageview');
     <!-- Newsletter
     ================================================== -->
     <div class="newsletter text-center">
-        <span class="h4"><img src="{{ site.baseurl }}/{{ site.logo }}" class="newsletter-logo" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <span class="h4"><img src="{{ site.baseurl }}/{{ site.logo }}" class="newsletter-logo" alt="{{site.title}}"> &nbsp; Nhận thông tin về <b>mã giảm giá, khuyến mãi</b>, đăng ký email của bạn:</span>
         <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
             <div class="mc-field-group d-inline-flex">
-            <input type="email" placeholder="Your e-mail" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
-            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+            <input type="submit" value="Đăng ký" name="subscribe" class="heart">
             </div>
         </form>
     </div>
@@ -111,12 +113,12 @@ ga('send', 'pageview');
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-sm-12 text-center text-lg-left">
+            <div class="col-md-12 col-sm-12 text-center text-lg-center">
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
             </div>
-            <div class="col-md-6 col-sm-12 text-center text-lg-right">    
+            <!-- <div class="col-md-6 col-sm-12 text-center text-lg-right">    
                 <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
-            </div>
+            </div> -->
         </div>
     </div>
 </footer>

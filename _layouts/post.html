@@ -20,10 +20,10 @@ post_class: post-template
             {% endif %}
         </div>            
         <div>
-        Written by <a target="_blank" class="text-dark" href="{{ author.web }}">{{ author.display_name }}</a> on 
+        Được viết bởi <a target="_blank" class="text-dark" href="{{ author.web }}">{{ author.display_name }}</a> on 
         <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
         {% if page.last_modified_at %}
-        (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+        (Đã cập nhật: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
         {% endif %}
         </div>            
     </div>
@@ -44,7 +44,7 @@ post_class: post-template
 <!-- Rating -->
 {% if page.rating %}
 <div class="rating mt-4 mb-4 d-flex align-items-center">
-    <strong class="mr-1">Rating:</strong> {% include star_rating.html %}
+    <strong class="mr-1">Xếp hạng:</strong> {% include star_rating.html %}
 </div>
 {% endif %}
 

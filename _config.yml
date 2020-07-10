@@ -1,7 +1,7 @@
 # Site
 name: "AUDIBOX"
 title: "AUDIBOX"
-description: "I will take you on the fabulous world of exploration. Travel, culture, lifestyle. Eat, Pray, Love!"
+description: "Sound card | Micro | Mixer | Headphone | Music Player | Speaker | Etc..."
 logo: 'assets/images/ax-logo.png'
 favicon: 'assets/images/logo.png'
 baseurl:
@@ -33,6 +33,12 @@ authors:
     twitter: https://twitter.com/wowthemesnet
     description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
 
+# Website & Social
+lazada: 'https://lazada.vn/shop/audibox'
+shopee: 'https://shopee.vn/comica.vietnam'
+facebook: 'https://facebook.com/audibox.hn'
+instagram: 'https://instagram.com/audiboxx'
+
 # Plugins
 plugins:
   - jekyll-paginate
@@ -53,7 +59,9 @@ jekyll-archives:
 # Pagination 
 paginate: 6
 paginate_path: /page:num/
-    
+
+# Sitemap
+url : "https://audibox.co"    
 # Other
 rouge: none
 markdown: kramdown
