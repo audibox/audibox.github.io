@@ -403,9 +403,10 @@ img, img:hover {
     margin-right: auto;
 }
 .posttitle {
-    font-size:30px;
+    font-size:20px;
     font-weight:700;
     line-height:1.2;
+    margin-top: -70px;
 }
 .entry-featured-image {  
     width:940px;  
@@ -635,7 +636,8 @@ body.active-side {
 }
 @media (max-width: 768px) {
     .posttitle {
-        font-size:35px;
+        font-size: 20px;
+        margin: -70px 0 0 80px;
     }
     .blog-grid-container {
         grid-template-columns: 1fr;
