@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight:700;    
     line-height:1.2;
     font-size:20px;
-    margin: -70px 0 0 80px;
+    margin: -100px 0 0 80px;
     @include media-breakpoint-up(sm) {
         font-size:30px;
         line-height:1.2;
