@@ -396,7 +396,7 @@ img, img:hover {
 }
 
 // blog 
-.article-post, .entry-header, .comments, .rating, .authorbox {
+.article-post, .comments, .rating, .authorbox {
     max-width: 740px;
     padding-left: 20px;
     padding-right: 20px;
@@ -427,7 +427,7 @@ img, img:hover {
     .author-thumb {
         width:50px;
         border-radius:50%;
-        margin-right:50px;
+        margin-right: 40px;
         margin-left: 70px;
         border:2px solid darken($primary,20%);
         padding:2px;
