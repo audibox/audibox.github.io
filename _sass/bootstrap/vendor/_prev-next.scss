@@ -7,7 +7,7 @@
 .single-feature-post.video-post {
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: 60%;
   height: 200px; }
 
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -114,7 +114,7 @@
 .vizew-pager-next {
   position: fixed;
   z-index: 100;
-  top: 40%;
+  top: 50%;
   left: 0;
   width: 60px;
   -webkit-transform: translateY(-50%);
@@ -122,16 +122,19 @@
   transform: translateY(-50%); }
   .vizew-pager-prev p,
   .vizew-pager-next p {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms;
     cursor: pointer;
     position: absolute;
     width: 250px;
+    height: 60px;
+    background-color: #de373f;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
-    color: #de373f;
+    color: #ffffff;
     line-height: 60px;
     text-transform: uppercase;
     text-align: center;
@@ -140,7 +143,7 @@
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    left: -30px;
+    left: -105px;
     z-index: 1; }
     @media only screen and (max-width: 767px) {
       .vizew-pager-prev p,
@@ -148,9 +151,7 @@
         width: 220px;
         height: 40px;
         font-size: 14px;
-        line-height: 40px;
-        left: -100px; } }
-
+        line-height: 40px; } }
   .vizew-pager-prev:hover,
   .vizew-pager-next:hover {
     width: 500px; }
