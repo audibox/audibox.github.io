@@ -1,26 +1,13 @@
-
 .bg-img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat; }
 
-
-.preloader {
-  background-color: #222627;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99999; }
-
-
 .single-feature-post.video-post {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 200px; }
+  height: 500px; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single-feature-post.video-post {
       height: 400px; } }
@@ -137,69 +124,47 @@
       background-color: #0f1112;
       font-size: 10px; }
 
-.single-post-area {
+.featured-post-slides,
+.sport-video-slides,
+.business-video-slides {
   position: relative;
   z-index: 1; }
-  .single-post-area .post-thumbnail {
-    position: relative;
-    z-index: 1; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .single-post-area .post-thumbnail {
-        margin-bottom: 30px; } }
-    @media only screen and (max-width: 767px) {
-      .single-post-area .post-thumbnail {
-        margin-bottom: 30px; } }
-    .single-post-area .post-thumbnail .video-duration {
-      display: inline-block;
-      position: absolute;
-      right: 15px;
-      bottom: 15px;
-      background-color: #0f1112;
-      padding: 6px 10px;
-      border-radius: 2px;
-      font-size: 14px;
-      color: #ffffff;
-      line-height: 1;
-      z-index: 79; }
-  .single-post-area .post-content {
-    position: relative;
-    z-index: 1;
-    margin-top: 20px; }
-    .single-post-area .post-content .post-title {
-      display: block;
-      color: #ffffff;
-      margin-bottom: 15px;
-      font-size: 20px; }
-      @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        .single-post-area .post-content .post-title {
-          font-size: 18px; } }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .single-post-area .post-content .post-title {
-          font-size: 16px; } }
-      @media only screen and (max-width: 767px) {
-        .single-post-area .post-content .post-title {
-          font-size: 18px; } }
-      .single-post-area .post-content .post-title:hover, .single-post-area .post-content .post-title:focus {
-        color: #db4437; }
-    .single-post-area .post-content .post-meta a {
-      display: inline-block;
-      margin-right: 20px; }
-      .single-post-area .post-content .post-meta a:hover, .single-post-area .post-content .post-meta a:focus {
-        color: #db4437; }
-      .single-post-area .post-content .post-meta a:last-child {
-        margin-right: 0; }
-    .single-post-area .post-content .post-meta .post-author {
-      color: #595959; }
-    .single-post-area .post-content .post-meta .post-date {
-      color: #595959; }
-    .single-post-area .post-content .post-meta i.fa-circle {
-      color: #a6a6a6;
-      font-size: 6px;
-      margin-right: 20px; }
-  .single-post-area.style-2 {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #393c3d; }
+  .featured-post-slides .owl-prev,
+  .featured-post-slides .owl-next,
+  .sport-video-slides .owl-prev,
+  .sport-video-slides .owl-next,
+  .business-video-slides .owl-prev,
+  .business-video-slides .owl-next {
+    background-color: #1b1e1f;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;
+    top: -88px;
+    right: 38px; }
+    .featured-post-slides .owl-prev:hover, .featured-post-slides .owl-prev:focus,
+    .featured-post-slides .owl-next:hover,
+    .featured-post-slides .owl-next:focus,
+    .sport-video-slides .owl-prev:hover,
+    .sport-video-slides .owl-prev:focus,
+    .sport-video-slides .owl-next:hover,
+    .sport-video-slides .owl-next:focus,
+    .business-video-slides .owl-prev:hover,
+    .business-video-slides .owl-prev:focus,
+    .business-video-slides .owl-next:hover,
+    .business-video-slides .owl-next:focus {
+      background-color: #0e0f10; }
+  .featured-post-slides .owl-next,
+  .sport-video-slides .owl-next,
+  .business-video-slides .owl-next {
+    right: 0; }
 
 
 .pager-article {
@@ -209,6 +174,8 @@
   transition-duration: 500ms;
   position: relative;
   z-index: 1;
+  width: 500px !important;
+  height: 320px !important;
   z-index: 9999;
   opacity: 0;
   visibility: hidden; }
@@ -226,7 +193,7 @@
 .vizew-pager-next {
   position: fixed;
   z-index: 100;
-  top: 50%;
+  top: 40%;
   left: 0;
   width: 60px;
   -webkit-transform: translateY(-50%);
@@ -251,6 +218,7 @@
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
+    top: 41%;
     margin-bottom: 0;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -267,7 +235,7 @@
         line-height: 40px; } }
   .vizew-pager-prev:hover,
   .vizew-pager-next:hover {
-    width: 300px; }
+    width: 500px; }
     @media only screen and (max-width: 767px) {
       .vizew-pager-prev:hover,
       .vizew-pager-next:hover {
@@ -297,6 +265,5 @@
 @media only screen and (max-width: 767px) {
   .post-a-comment-area {
     margin-bottom: 80px; } }
-
 
 /*# sourceMappingURL=style.css.map */
