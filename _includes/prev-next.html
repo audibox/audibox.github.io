@@ -1,0 +1,30 @@
+{% if page.previous.url %}
+<div class="vizew-pager-prev">
+    <p>PREV POST</p>
+    <!-- Single Feature Post -->
+    <div class="single-feature-post video-post bg-img pager-article" style="background-image: url({{ page.previous.image | absolute_url }});">
+        <!-- Post Content -->
+        <div class="post-content">
+            {% for tag in page.previous.tags %}
+            <a href="{{ site.baseurl }}/tags#{{ page.previous.tags }}" class="post-cata cata-sm cata-success">{{ page.previous.tags }}</a>
+            {% endfor %}
+            <a href="{{ page.previous.url }}" class="post-title">{{page.previous.title}}</a>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% if page.next.url %}
+<div class="vizew-pager-next">
+    <p>NEXT POST</p>
+    <!-- Single Feature Post -->
+    <div class="single-feature-post video-post bg-img pager-article" style="background-image: url({{ page.next.image | absolute_url }});">
+        <!-- Post Content -->
+        <div class="post-content">
+            {% for tag in page.next.tags %}
+            <a href="{{ site.baseurl }}/tags#{{ tag }}" class="post-cata cata-sm cata-business">{{ tag }}</a>
+            {% endfor %}
+            <a href="{{ page.next.url }}" class="post-title">{{ page.next.title }}</a>
+        </div>
+    </div>
+</div>
+{% endif %}

@@ -1,0 +1,1 @@
+<div>site.collections</div>
